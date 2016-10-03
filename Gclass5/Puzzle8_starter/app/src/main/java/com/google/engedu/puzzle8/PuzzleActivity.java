@@ -87,7 +87,7 @@ public class PuzzleActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 
-        if( requestCode == REQUEST_IMAGE && resultCode == Activity.RESULT_OK ){
+        if( requestCode == REQUEST_IMAGE && resultCode == Activity.RESULT_OK ){   //After complete the picture
             try {
                 FileInputStream in = new FileInputStream(destination);
                 BitmapFactory.Options options = new BitmapFactory.Options();
