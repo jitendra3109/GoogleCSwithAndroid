@@ -1,3 +1,4 @@
+/*
 package com.google.engedu.puzzle8;
 
 import android.app.Activity;
@@ -121,3 +122,4 @@ public class PuzzleActivity extends AppCompatActivity {
         return df.format(date);
     }
 }
+*/
