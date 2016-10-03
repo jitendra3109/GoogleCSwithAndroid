@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Unit 3</title>
+</head>
+<body><html><head><style type="text/css">
+
+  
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: #212121;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+    margin: 0;
+    padding: 0 !important;
+}
+
+body.project-home,
+body.videos,
+body.solo-video {
+  background: #f7f7f7;
+}
+
+a {
+  font-size: 18px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+a.button,
+.card a.button,
+a.button-white {
+  background-color: #03a9f4;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .37);
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  height: 32px;
+  line-height: 18px;
+  margin: 8px 0;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a.button-white {
+  background-color: #fff;
+  color: #03a9f4;
+  position: absolute;
+  right: 20px;
+  top: 4px;
+  z-index: 1;
+}
+
+p {
+  line-height: 32px;
+  margin: 16px 0;
+}
+
+h1 {
+  color: #757575;
+}
+
+h2, .head-con h2 {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.head-con h2 {
+  color: #fff;
+  font-weight: bold;
+  margin: 28px 0 !important;
+}
+
+.full-site-width {
+  margin: 0 auto;
+  max-width: 1400px;    
+}
+
+.head-con {
+    background: #4285f4;
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.head-con hr {
+  display: none;
+}
+
+.head-con p {
+  font-size: 18px;
+}
+
+.dev-logo {
+  margin-right: 8px;
+  position: relative;
+  top: 11px;
+  width: 51px;
+}
+
+.contents {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contents-inner {
+  padding: 20px 0;
+}
+
+.top-bar {
+  background: #000;
+  min-height: 32px;
+  opacity: .1;
+}
+
+.back-button-wrapper {
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: normal;
+  position: absolute;
+  text-transform: uppercase;
+  top: 10px;
+  z-index: 1;
+}
+
+.back-button {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 12px;
+  top: 6px;
+  vertical-align: top;
+}
+
+.header-title-contents {
+  min-height: 48px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+  margin: 40px auto 0;
+  width: 80%;
+}
+
+.card-inner {
+  overflow: auto;
+  padding: 40px;
+}
+
+.card-inner > h2:first-child,
+.card-inner > h3:first-child {
+  margin-top: 0;
+}
+
+
+
+.card a {
+  color: #03a9f4;
+}
+
+.card a.online {
+  color: #00FF2F;
+}
+
+.card h2 {
+  color: #757575;
+}
+
+.card h3 {
+  color: #212121;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card h3.red {
+  color: red;
+}
+
+.social-wrapper {
+  float: right;
+  font-size: 0;
+}
+
+.social-wrapper a {
+  display: block;
+  float: left;
+  height: 48px;
+  text-indent: -9999px;
+  width: 48px;
+}
+
+.twitter-link {
+  background: url(../../img/twitter-logo.svg) 0 0 no-repeat;
+  margin-right: 16px;
+}
+
+.plus-link {
+  background: url(../../img/google-plus-logo.svg) 0 0 no-repeat;
+}
+
+.section {
+    color: #3F51B5;
+    line-height: 30px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+#back-button {
+  position: absolute;
+    text-align: left; 
+    text-indent: 10px;
+
+}
+
+#back {
+    color: white;
+    text-decoration: none;
+}
+
+.last-updated {
+  color: #757575;
+  font-size: 16px;
+  font-style: italic;
+  margin: 12px auto 60px;
+}
+
+.footer {
+    background: #424242;
+    bottom: 0;
+    color: #999999;
+    font-size: 13px;
+    left: 0;
+    min-height: 60px;
+    padding: 10px 24px;
+    position: relative;
+    right:0;
+    text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.footer a,
+.footer p {
+  line-height: 24px;
+}
+
+/* Search stuff starts here */
+.container {
+  margin: 20px;
+  max-width: 550px;
+}
+h1, .form, .results {
+    padding: 20px 0;
+}
+h1 {
+    margin: 0;
+  padding-bottom: 0;
+}
+.results {
+    padding-top: 0;
+}
+select {
+  background: #f5f5f5;
+  float: left;
+  border: 1px solid #e4e4e4;
+  height: 32px;
+  text-transform: capitalize;
+}
+input[type="text"] {
+  border: 1px solid #DDD;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-right: 1px;
+  padding: 7px;
+  width: 350px;
+}
+input:focus,
+button:focus,
+select:focus {
+  outline:0;
+}
+.results p {
+  margin: 15px 0;
+}
+.message {
+  margin-bottom: 30px;
+}
+.error {
+  color: #EE0000;
+}
+.centered {
+  text-align: center;
+}
+.title {
+  font-size: 16px;
+  color: #1A0DAB;
+}
+.path {
+    font-size: 12px;
+    color: #006621;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.description {
+  font-size: 13px;
+  color: #545454;
+  line-height: 1.3;
+}
+.description strong {
+  color: #545454;
+}
+.path, .description, .page-nav {
+  display: block;
+  padding: 2px 0 0;
+  width: 500px;
+}
+.page-nav {
+  text-align: center;
+  margin-top:20px;
+}
+.page-nav a {
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;  
+}
+.page-nav a.active {
+  color:#000;
+  font-weight:bold;
+}
+.category-label {
+  text-transform:capitalize;
+}
+
+/* Video page stuff starts here */
+.main-content{
+    margin-top: 50px;
+}
+body.videos .card {
+  margin-bottom: 40px;
+  overflow: auto;
+  padding-left: 40px;
+}
+body.videos .card h2 {
+  margin: 40px;
+}
+.video {
+    min-height: 80px;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    padding: 0 30px 15px 30px;
+    background-color: white;
+}
+.video-box {
+  display: block;
+    float: left;
+    margin: 0 40px 40px 0;
+    /* 1st width rule is a fallback for older browsers that don't support calc */
+    width: 29%;
+    width: calc((100% - 120px)/3);
+}
+.video-thumb {
+  background: url(../../img/play-btn.svg) no-repeat 48% 51% #d8d8d8;
+  height: 150px;
+  opacity: .55;
+  width: 100%;
+}
+.video-thumb a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+body.solo-video .card {
+  margin-bottom: 40px;
+}
+.solo-video-description {
+  margin-bottom: 0;
+}
+video {
+  width: 100%;
+}
+#img-con, #title {
+    display: inline-block;
+}
+#img-con {
+    margin-top: 5px;
+    /*width: auto;*/
+}
+
+#title {
+    text-align: center;
+    margin-top: 10px;
+    max-height: 80px;
+}
+
+#title a {
+  color: #212121;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#name{
+    position:relative;
+    top: 0;
+    word-wrap: break-word;
+}
+#subtitle{
+    font-size: .83em;
+    /*word-wrap: break-word;*/
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    color: #263238;
+}
+
+@media only screen and (max-width: 1000px) {
+  .video-box {
+    display: block;
+      float: left;
+      margin: 0 40px 40px 0;
+      /* 1st width rule is a fallback for older browsers that don't support calc */
+      width: 44%;
+      width: calc((100% - 80px)/2);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+    .video-box {
+      /* 1st width rule is a fallback for older browsers that don't support calc */
+      width: 96%;
+        width: calc(100% - 40px);
+    } 
+
+    #title {
+      font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+</style>
+
+  <link rel="stylesheet" href="../md.css">
+
+</head><body><div class="head-con">
+<div class="top-bar"></div>
+<div class="contents header-title-contents">
+<div class="contents-inner">
+<p>The contents of this offline web site may change in the future. To access our most recent content, please visit this <a class="online" href="https://cswithandroid.withgoogle.com/content/course" style="color:#0F0" target="_blank">online version.</a></p>
+</div>
+</div>
+<a class="abcde" href="http://https://cswithandroid.withgoogle.com/unit?unit=7" style=" font-weight: bold;display:none" target="_blank">
+</a>
+</div>
+<img src="http://www.google-analytics.com/collect?cn=OfflineDevContent&cm=site&cid=2801659346.2801753176&ea=open&ec=page&tid=UA-XXXXXXX-X&t=pageview&v=1&cs=offlinedevsite&dp=build%2Foutput%2FComputer_Science_with_Android_offline%2FUnit-3%2Fu3-workshop.html"></body></html>
+
+
+                      <div class="card">
+            <div class="card-inner">
+	<div class="g3doc-content" id="article">  <h1 id="unit-3">Unit 3</h1>
+
+<a id="unit_3_workshop"></a>
+<h2 id="unit-3-workshop">Unit 3 Workshop</h2>
+
+<p>This workshop's activity will be a game called Ghost.</p>
+
+<p>Ghost is a word game in which players take turns adding individual letters to a
+growing word fragment, trying <strong>not</strong> to be the one to complete a valid word.
+Each fragment must be the beginning of an actual word, and, for our purposes,
+we will consider 4 to be the minimum word length. The player who completes a
+word or creates a fragment that is not the prefix of a word loses the round.</p>
+
+<p>So on player 1's turn, they can:</p>
+
+<ul>
+<li>challenge player 2's word if they think player 2 has formed a valid word of at
+least 4 letters. If the fragment is a word, then player 1 wins; if the fragment
+is not a word, then player 2 wins.</li>
+<li>challenge player 2's word if they think that no word can be formed with the
+current fragment. Then, player 2 must provide a valid word starting with the
+current fragment or lose.</li>
+<li>add a letter to move the fragment towards a valid word</li>
+<li>attempt to bluff player 2 by adding a letter that doesn't move the fragment
+towards a valid word</li>
+</ul>
+
+<p>You can read more about this game on <a href="https://en.wikipedia.org/wiki/Ghost_(game)" rel="noreferrer" target='_blank'  style='color: green' >Wikipedia</a>.</p>
+
+<p>The UI for our game will look like this:</p>
+
+<p><img src="ghost.png" alt="Ghost screenshot"/></p>
+
+<a id="ghost_with_simple_computer_player"></a>
+<h3 id="ghost-with-simple-computer-player">Ghost with simple computer player</h3>
+
+<p>We've provided a <a href="ghost_starter.zip" rel="noreferrer">starter project</a>
+for you with some skeleton code as a starting point.</p>
+
+<p>Continue by editing activity_ghost.xml to create the proper ui.
+It should contain:</p>
+
+<ul>
+<li>A large TextView to display the word fragment. Note that we are not using an
+EditText for this field because the EditText field brings in many default
+behaviors that are not desirable in this case.</li>
+<li>A smaller TextView to display the game status</li>
+<li>Two buttons, one to challenge the validity of the word that the computer
+is creating and one to start a new round. The reset button's handler is provided
+as the <code>onStart</code> method.</li>
+</ul>
+
+<p>The provided assets directory contains a file called &quot;1-10000.txt&quot; which
+contains 10,000 words that we will use as the basis for our dictionary.
+Feel free to substitute your own word list if you desire.</p>
+
+<p>Initialize the dictionary by loading the content of the file in the
+<code>GhostActivity.onCreate</code> method. You can use <code>getAssets().open</code> to access the
+dictionary file as an InputStream and feed it to the <code>SimpleDictionary</code>'s
+constructor to instantiate the dictionary member. We've provided the
+implementation of <code>SimpleDictionary</code>'s constructor and the <code>isWord</code> method which
+is all you need for now.</p>
+
+<p>Since we are not using a standard EditText field, we will need to do some
+keyboard handling. Proceed to override the <code>GhostActivity.onKeyUp</code> method.
+If the key that the user pressed is not a letter, default to returning the value
+of <code>super.onKeyUp()</code>. Otherwise, add the letter to the word fragment. Also check
+whether the current word fragment is a complete word and, if it is, update the
+game status label to indicate so (this is not the right behavior for the game
+but will allow you to verify that your code is working for now).</p>
+
+<p>You should have a working app and can test the basic functionality of your code.
+If your app is not working as intended, look for error messages in the logcat
+window of Android Studio. You may also need to add some logging to your app in
+order to see why it is not working as intended.</p>
+
+<p>If your app is working so far, it's time to take on the <code>computerTurn</code> method.
+This method should get the current word fragment and:</p>
+
+<ol>
+<li>Check if the fragment is a word with at least 4 characters. If so declare
+victory by updating the game status</li>
+<li>Use the dictionary's <code>getAnyWordStartingWith</code> method to get a possible
+longer word</li>
+<li>If such a word doesn't exist (method returns null), challenge the user's
+fragment and declare victory (you can't bluff this computer!)</li>
+<li>If such a word does exist, add the next letter of it to the fragment
+(remember the substring method in the <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" rel="noreferrer" target='_blank'  style='color: green' >Java string library</a>)</li>
+</ol>
+
+<p>At this stage, you might notice that <code>getAnyWordStartingWith</code> is not implemented
+in <code>SimpleDictionary</code>. Write your own implementation of <code>getAnyWordStartingWith</code>
+that does the following:</p>
+
+<ul>
+<li>If prefix is empty return a randomly selected word from the words <code>ArrayList</code></li>
+<li>Otherwise, perform a binary search over the words <code>ArrayList</code> until you find a
+word that starts with the given prefix and return it.</li>
+<li>If no such word exists, return null</li>
+</ul>
+
+<p>Finally, return to <code>GhostActivity</code> and implement the handler for the Challenge
+button. It should:</p>
+
+<ul>
+<li>Get the current word fragment</li>
+<li>If it has at least 4 characters and is a valid word, declare victory for the
+user</li>
+<li>otherwise if a word can be formed with the fragment as prefix, declare victory
+for the computer and display a possible word</li>
+<li>If a word cannot be formed with the fragment, declare victory for the user</li>
+</ul>
+
+<p>Having completed the basic functionality of the game, take some time to apply
+what you have learned about preserving an app's state to save both the word
+fragment and the current game status message when the app is suspended. The
+easiest way to trigger suspension behavior is to cause the screen to rotate
+between portrait and landscape mode. You can enable this by editing the line
+in <code>AndroidManifest</code> that locks our app in portrait mode. Note that the game
+is not playable in landscape mode as the keyboard disappears.</p>
+
+<h3 id="extensions">Extensions</h3>
+
+<p>There are a couple of ideas for extensions to inspire you:</p>
+
+<ul>
+<li>Keep track of scores over the course of multiple words. If you do this make
+sure that these scores survive the app being suspended.</li>
+<li>Simple-superghost lets the human player add a letter to either the end or
+the start of the fragment. The computer still only adds at the end. You will
+need to come up with a good UI to let the user select front or back.</li>
+</ul>
+
+ </div>
+
+  <div style=" height: 60px;float: left; background-color: #4285f4; border: solid 0px; border-radius: 3px;"><a href="u3-preparation.html"><h4 style="margin: 20px; color: white; line-height: 25px">Previous ( Unit 3: Preparation )</h4></a></div>
+
+ <div style=" height: 60px;float: right; background-color: #4285f4; border: solid 0px; border-radius: 3px;"><a href="../Unit-4/u4-preparation.html"><h4 style="margin: 20px; color: white; line-height: 25px">Next ( Unit 4: Preparation )</h4></a></div>   
+
+ <div style="margin: 0 auto; width: 120px; height: 50px;float: center; background-color: gray; border: solid 0px; border-radius: 3px;"><a href="../START_HERE.html"><h4 style="width: 120px; padding: 0 30px;color: white; line-height: 50px">Home</h4></a></div>
+ 
+ </div>
+ </div>
+ 
+<img src="http://www.google-analytics.com/collect?cn=OfflineDevContent&cm=site&cid=2801659346.2801753176&ea=open&ec=page&tid=UA-XXXXXXX-X&t=pageview&v=1&cs=offlinedevsite&dp=build%2Foutput%2FComputer_Science_with_Android_offline%2FUnit-3%2Fu3-workshop.html"></body>
+</html>

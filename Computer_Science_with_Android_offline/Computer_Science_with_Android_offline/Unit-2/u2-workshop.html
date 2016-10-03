@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../md.css">
+	<title>Unit 2</title>
+</head>
+<body><html><head><style type="text/css">
+
+  
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: #212121;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+    margin: 0;
+    padding: 0 !important;
+}
+
+body.project-home,
+body.videos,
+body.solo-video {
+  background: #f7f7f7;
+}
+
+a {
+  font-size: 18px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+a.button,
+.card a.button,
+a.button-white {
+  background-color: #03a9f4;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .37);
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  height: 32px;
+  line-height: 18px;
+  margin: 8px 0;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a.button-white {
+  background-color: #fff;
+  color: #03a9f4;
+  position: absolute;
+  right: 20px;
+  top: 4px;
+  z-index: 1;
+}
+
+p {
+  line-height: 32px;
+  margin: 16px 0;
+}
+
+h1 {
+  color: #757575;
+}
+
+h2, .head-con h2 {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.head-con h2 {
+  color: #fff;
+  font-weight: bold;
+  margin: 28px 0 !important;
+}
+
+.full-site-width {
+  margin: 0 auto;
+  max-width: 1400px;    
+}
+
+.head-con {
+    background: #4285f4;
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.head-con hr {
+  display: none;
+}
+
+.head-con p {
+  font-size: 18px;
+}
+
+.dev-logo {
+  margin-right: 8px;
+  position: relative;
+  top: 11px;
+  width: 51px;
+}
+
+.contents {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contents-inner {
+  padding: 20px 0;
+}
+
+.top-bar {
+  background: #000;
+  min-height: 32px;
+  opacity: .1;
+}
+
+.back-button-wrapper {
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: normal;
+  position: absolute;
+  text-transform: uppercase;
+  top: 10px;
+  z-index: 1;
+}
+
+.back-button {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 12px;
+  top: 6px;
+  vertical-align: top;
+}
+
+.header-title-contents {
+  min-height: 48px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+  margin: 40px auto 0;
+  width: 80%;
+}
+
+.card-inner {
+  overflow: auto;
+  padding: 40px;
+}
+
+.card-inner > h2:first-child,
+.card-inner > h3:first-child {
+  margin-top: 0;
+}
+
+
+
+.card a {
+  color: #03a9f4;
+}
+
+.card a.online {
+  color: #00FF2F;
+}
+
+.card h2 {
+  color: #757575;
+}
+
+.card h3 {
+  color: #212121;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card h3.red {
+  color: red;
+}
+
+.social-wrapper {
+  float: right;
+  font-size: 0;
+}
+
+.social-wrapper a {
+  display: block;
+  float: left;
+  height: 48px;
+  text-indent: -9999px;
+  width: 48px;
+}
+
+.twitter-link {
+  background: url(../../img/twitter-logo.svg) 0 0 no-repeat;
+  margin-right: 16px;
+}
+
+.plus-link {
+  background: url(../../img/google-plus-logo.svg) 0 0 no-repeat;
+}
+
+.section {
+    color: #3F51B5;
+    line-height: 30px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+#back-button {
+  position: absolute;
+    text-align: left; 
+    text-indent: 10px;
+
+}
+
+#back {
+    color: white;
+    text-decoration: none;
+}
+
+.last-updated {
+  color: #757575;
+  font-size: 16px;
+  font-style: italic;
+  margin: 12px auto 60px;
+}
+
+.footer {
+    background: #424242;
+    bottom: 0;
+    color: #999999;
+    font-size: 13px;
+    left: 0;
+    min-height: 60px;
+    padding: 10px 24px;
+    position: relative;
+    right:0;
+    text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.footer a,
+.footer p {
+  line-height: 24px;
+}
+
+/* Search stuff starts here */
+.container {
+  margin: 20px;
+  max-width: 550px;
+}
+h1, .form, .results {
+    padding: 20px 0;
+}
+h1 {
+    margin: 0;
+  padding-bottom: 0;
+}
+.results {
+    padding-top: 0;
+}
+select {
+  background: #f5f5f5;
+  float: left;
+  border: 1px solid #e4e4e4;
+  height: 32px;
+  text-transform: capitalize;
+}
+input[type="text"] {
+  border: 1px solid #DDD;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-right: 1px;
+  padding: 7px;
+  width: 350px;
+}
+input:focus,
+button:focus,
+select:focus {
+  outline:0;
+}
+.results p {
+  margin: 15px 0;
+}
+.message {
+  margin-bottom: 30px;
+}
+.error {
+  color: #EE0000;
+}
+.centered {
+  text-align: center;
+}
+.title {
+  font-size: 16px;
+  color: #1A0DAB;
+}
+.path {
+    font-size: 12px;
+    color: #006621;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.description {
+  font-size: 13px;
+  color: #545454;
+  line-height: 1.3;
+}
+.description strong {
+  color: #545454;
+}
+.path, .description, .page-nav {
+  display: block;
+  padding: 2px 0 0;
+  width: 500px;
+}
+.page-nav {
+  text-align: center;
+  margin-top:20px;
+}
+.page-nav a {
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;  
+}
+.page-nav a.active {
+  color:#000;
+  font-weight:bold;
+}
+.category-label {
+  text-transform:capitalize;
+}
+
+/* Video page stuff starts here */
+.main-content{
+    margin-top: 50px;
+}
+body.videos .card {
+  margin-bottom: 40px;
+  overflow: auto;
+  padding-left: 40px;
+}
+body.videos .card h2 {
+  margin: 40px;
+}
+.video {
+    min-height: 80px;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    padding: 0 30px 15px 30px;
+    background-color: white;
+}
+.video-box {
+  display: block;
+    float: left;
+    margin: 0 40px 40px 0;
+    /* 1st width rule is a fallback for older browsers that don't support calc */
+    width: 29%;
+    width: calc((100% - 120px)/3);
+}
+.video-thumb {
+  background: url(../../img/play-btn.svg) no-repeat 48% 51% #d8d8d8;
+  height: 150px;
+  opacity: .55;
+  width: 100%;
+}
+.video-thumb a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+body.solo-video .card {
+  margin-bottom: 40px;
+}
+.solo-video-description {
+  margin-bottom: 0;
+}
+video {
+  width: 100%;
+}
+#img-con, #title {
+    display: inline-block;
+}
+#img-con {
+    margin-top: 5px;
+    /*width: auto;*/
+}
+
+#title {
+    text-align: center;
+    margin-top: 10px;
+    max-height: 80px;
+}
+
+#title a {
+  color: #212121;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#name{
+    position:relative;
+    top: 0;
+    word-wrap: break-word;
+}
+#subtitle{
+    font-size: .83em;
+    /*word-wrap: break-word;*/
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    color: #263238;
+}
+
+@media only screen and (max-width: 1000px) {
+  .video-box {
+    display: block;
+      float: left;
+      margin: 0 40px 40px 0;
+      /* 1st width rule is a fallback for older browsers that don't support calc */
+      width: 44%;
+      width: calc((100% - 80px)/2);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+    .video-box {
+      /* 1st width rule is a fallback for older browsers that don't support calc */
+      width: 96%;
+        width: calc(100% - 40px);
+    } 
+
+    #title {
+      font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+</style>
+
+
+  <link rel="stylesheet" href="../md.css">
+
+</head><body><div class="head-con">
+<div class="top-bar"></div>
+<div class="contents header-title-contents">
+<div class="contents-inner">
+<p>The contents of this offline web site may change in the future. To access our most recent content, please visit this <a class="online" href="https://cswithandroid.withgoogle.com/content/course" style="color:#0F0" target="_blank">online version.</a></p>
+</div>
+</div>
+<a class="abcde" href="http://https://cswithandroid.withgoogle.com/unit?unit=4" style=" font-weight: bold;display:none" target="_blank">
+</a>
+</div>
+<img src="http://www.google-analytics.com/collect?cn=OfflineDevContent&cm=site&cid=2802782086.2802782476&ea=open&ec=page&tid=UA-XXXXXXX-X&t=pageview&v=1&cs=offlinedevsite&dp=build%2Foutput%2FComputer_Science_with_Android_offline%2FUnit-2%2Fu2-workshop.html"></body></html>
+
+
+                      <div class="card">
+            <div class="card-inner">
+	<div class="g3doc-content" id="article">  <h1 id="unit-2">Unit 2</h1>
+
+<a id="unit_2_workshop"></a>
+<h2 id="unit-2-workshop">Unit 2 Workshop</h2>
+
+<p>In this workshop, we will create a game from scratch in Android Studio.
+The game that we will be creating is a dice game called Scarne's dice (you may
+already be familiar with it from a previous unit).</p>
+
+<a id="scarnes_dice"></a>
+<h3 id="scarnes-dice">Scarne's dice</h3>
+
+<p>Scarne’s Dice is a turn-based dice game where players score points by rolling a
+die and then:</p>
+
+<ul>
+<li>if they roll a 1, score no points and lose their turn</li>
+<li>if they roll a 2 to 6:
+<ul>
+<li>add the rolled value to their points</li>
+<li>choose to either reroll or keep their score and end their turn</li>
+</ul></li>
+</ul>
+
+<p>The winner is the first player that reaches (or exceeds) 100 points.</p>
+
+<p>For example, if a player starts their turn and rolls a 6, they can choose to
+either ‘hold’ and end their turn, in which case they can add the 6 to their
+score, or to reroll and potentially score more points.</p>
+
+<p>Let’s say they decide to roll again, and they get a 4. They now have the option
+to end their turn and add 10 points (6 + 4) to their score, or to roll again to
+get even more points.</p>
+
+<p>They decide to roll again, but get a 1. Getting a 1 makes the player lose all
+the points from their turn (so their score is the same as before their turn),
+and finishes their turn, allowing the second player to begin their turn.</p>
+
+<p>This goes on until one of the players reaches 100 points or more.</p>
+
+<a id="implementing_the_ui"></a>
+<h3 id="implementing-the-ui">Implementing the UI</h3>
+
+<p>As mentioned in the preparation for this workshop, there is no starter code for
+this activity but we do provide you with some some images for the
+<a href="dice_faces.zip" rel="noreferrer">dice faces</a>.</p>
+
+<p><em>If you finished creating the UI in the preparation activity, you can skip this
+next step.</em> Start by creating a blank activity and create the UI shown in the
+image below using either the visual editor or the XML editor (or probably a
+combination of both). The UI is composed of:</p>
+
+<ul>
+<li>A <code>TextView</code> to display the score and status of the game</li>
+<li>An <code>ImageView</code> to display the current die (default to the image of your
+choice)</li>
+<li>Three buttons to either roll the die, end your turn or start over</li>
+</ul>
+
+<p><center>
+<img src="scarnes_dice.png" alt="Screen shot"/>
+</center></p>
+
+<a id="implementing_the_game"></a>
+<h3 id="implementing-the-game">Implementing the game</h3>
+
+<p>We will begin implementing <code>DiceActivity.java</code> by adding to the default activity
+template:</p>
+
+<ul>
+<li>Four global variables to store:
+<ul>
+<li>the user's overall score state</li>
+<li>the user's turn score</li>
+<li>the computer's overall score</li>
+<li>the computer's turn score</li>
+</ul></li>
+<li>A click handler for the &quot;Roll&quot; button that will:
+<ul>
+<li>randomly select a dice value</li>
+<li>update the display to reflect the rolled value</li>
+</ul></li>
+</ul>
+
+<p>Use <code>getResources().getDrawable</code> in order to programmatically access other
+images. This functionality will also be needed for the computer turn so a helper
+function to roll the die may be useful to implement.</p>
+
+<p>Then start creating game logic. If the roll is not a 1, update the user's turn
+score by the value of the roll and update the label to &quot;Your score: 0 computer
+score: 0 your turn score: X&quot;. If the roll is a 1, reset the turn score to 0 and
+update the label accordingly. <code>TextView</code> can be edited programmatically by
+calling <code>findViewById</code> to get the <code>TextView</code> object.</p>
+
+<p>Having written the basic &quot;Roll&quot; functionality, you can tackle the other two
+button handlers:</p>
+
+<ul>
+<li>When <code>ResetButton</code> is clicked, reset the 4 global variables to 0 and update
+the label text</li>
+<li>When <code>HoldButton</code> is clicked, updating the user's overall score, reset the
+user round score and update the label.</li>
+</ul>
+
+<p>At this stage, the basic user turn functionality is in place. Now, you can
+implement the computer turn. Start off with a very simple strategy for the
+computer: if the computer's round score is less than 20, re-roll, otherwise
+hold.</p>
+
+<p>Create a helper method called <code>computerTurn</code>, it will need to:</p>
+
+<ul>
+<li>Disable the roll and hold buttons</li>
+<li>Create a while loop that loops over each of the computer's turn. During each
+iteration of the loop:
+<ul>
+<li>pick a random die value and display it (hopefully using the helper you
+created earlier)</li>
+<li>follow the game rules depending on the value of the roll.</li>
+</ul></li>
+</ul>
+
+<p>Be sure to update the label with the computer's round score or &quot;Computer holds&quot;
+or &quot;Computer rolled a one&quot; as appropriate.</p>
+
+<p>Finally, invoke the <code>computerTurn</code> procedure from the both the <code>HoldButton</code>
+handler and the <code>RollButton</code> handler (if the user rolled a 1).</p>
+
+<p>You may find again that a helper procedure is useful in doing the house
+cleaning that concludes the computer's turn (updating the computer's overall
+score, reset its turn score and reenabling the buttons).</p>
+
+<p>The game should now be functional so try playing a few rounds against the
+computer. Remember to use the logging library that you read about in last
+unit's preparation to help diagnose what is happening when your program doesn't
+behave as expected.</p>
+
+<p>Although the game (hopefully) works roughly as intended you may find the
+computer turn to be quite hard to follow as it happens so quickly that you can
+hardly see the die rolls and the label updates. Let's address that by
+refactoring the computer turn:</p>
+
+<ul>
+<li>Get rid of the while loop (but not its contents!) and make the <code>computerTurn</code>
+method handle a single roll of the computer's turn</li>
+<li>If the computer can and does decide to roll again create a timed event that
+will do so after an appropriate delay (say 500 ms). To accomplish this, you
+can use <code>Handler.postDelayed</code>, an example of which can be seen on
+<a href="http://stackoverflow.com/questions/4597690/android-timer-how" rel="noreferrer" target='_blank'  style='color: green' >StackOverflow</a>.</li>
+</ul>
+
+<p>Enjoy the wonders of a fully functional game of Scarne's dice!</p>
+
+<h3 id="extensions">Extensions</h3>
+
+<p>This unit's extension suggestions are:</p>
+
+<ul>
+<li>Two-dice version. In this version, two standard dice are rolled:
+<ul>
+<li>if neither shows a 1, their sum is added to the turn total</li>
+<li>if a single 1 is rolled, the player scores nothing and the turn ends</li>
+<li>if two 1s are rolled, the player’s entire score is lost, and the turn ends</li>
+<li>if a double is rolled, the point total is added to the turn total as with
+any roll but the player is obligated to roll again.</li>
+</ul></li>
+<li>Implement a smarter computer player. I wouldn't recommend attempting the
+optimal player (which you can read about
+<a href="http://cs.gettysburg.edu/projects/pig/pigVis.html" rel="noreferrer" target='_blank'  style='color: green' >here</a>) but take into
+account the difference between the computer score and user score in deciding
+when to hold</li>
+<li>Write another dice game of your choice</li>
+<li>Add support for playing the game to 100 points, declaring a winner and
+starting a new game</li>
+<li>Create an animation representing each die roll. This will avoid confusion
+when rolling the same value twice in a row.</li>
+</ul>
+ </div>
+
+  <div style=" height: 60px;float: left; background-color: #4285f4; border: solid 0px; border-radius: 3px;"><a href="u2-preparation.html"><h4 style="margin: 20px; color: white; line-height: 25px">Previous ( Unit 2: Preparation )</h4></a></div>
+
+ <div style=" height: 60px;float: right; background-color: #4285f4; border: solid 0px; border-radius: 3px;"><a href="../Unit-3/u3-preparation.html"><h4 style="margin: 20px; color: white; line-height: 25px">Next ( Unit 3: Preparation )</h4></a></div>   
+
+
+ <div style="margin: 0 auto; width: 120px; height: 50px;float: center; background-color: gray; border: solid 0px; border-radius: 3px;"><a href="../START_HERE.html"><h4 style="width: 120px; padding: 0 30px;color: white; line-height: 50px">Home</h4></a></div>
+
+ </div>
+ </div>
+<img src="http://www.google-analytics.com/collect?cn=OfflineDevContent&cm=site&cid=2802782086.2802782476&ea=open&ec=page&tid=UA-XXXXXXX-X&t=pageview&v=1&cs=offlinedevsite&dp=build%2Foutput%2FComputer_Science_with_Android_offline%2FUnit-2%2Fu2-workshop.html"></body>
+</html>

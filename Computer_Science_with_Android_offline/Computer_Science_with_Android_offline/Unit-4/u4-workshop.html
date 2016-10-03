@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Unit 4</title>
+</head>
+<body><html><head><style type="text/css">
+
+  
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: #212121;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+    margin: 0;
+    padding: 0 !important;
+}
+
+body.project-home,
+body.videos,
+body.solo-video {
+  background: #f7f7f7;
+}
+
+a {
+  font-size: 18px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+a.button,
+.card a.button,
+a.button-white {
+  background-color: #03a9f4;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .37);
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  height: 32px;
+  line-height: 18px;
+  margin: 8px 0;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a.button-white {
+  background-color: #fff;
+  color: #03a9f4;
+  position: absolute;
+  right: 20px;
+  top: 4px;
+  z-index: 1;
+}
+
+p {
+  line-height: 32px;
+  margin: 16px 0;
+}
+
+h1 {
+  color: #757575;
+}
+
+h2, .head-con h2 {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.head-con h2 {
+  color: #fff;
+  font-weight: bold;
+  margin: 28px 0 !important;
+}
+
+.full-site-width {
+  margin: 0 auto;
+  max-width: 1400px;    
+}
+
+.head-con {
+    background: #4285f4;
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.head-con hr {
+  display: none;
+}
+
+.head-con p {
+  font-size: 18px;
+}
+
+.dev-logo {
+  margin-right: 8px;
+  position: relative;
+  top: 11px;
+  width: 51px;
+}
+
+.contents {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contents-inner {
+  padding: 20px 0;
+}
+
+.top-bar {
+  background: #000;
+  min-height: 32px;
+  opacity: .1;
+}
+
+.back-button-wrapper {
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: normal;
+  position: absolute;
+  text-transform: uppercase;
+  top: 10px;
+  z-index: 1;
+}
+
+.back-button {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 12px;
+  top: 6px;
+  vertical-align: top;
+}
+
+.header-title-contents {
+  min-height: 48px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+  margin: 40px auto 0;
+  width: 80%;
+}
+
+.card-inner {
+  overflow: auto;
+  padding: 40px;
+}
+
+.card-inner > h2:first-child,
+.card-inner > h3:first-child {
+  margin-top: 0;
+}
+
+
+.card a {
+  color: #03a9f4;
+}
+
+.card a.online {
+  color: #00FF2F;
+}
+
+.card h2 {
+  color: #757575;
+}
+
+.card h3 {
+  color: #212121;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card h3.red {
+  color: red;
+}
+
+.social-wrapper {
+  float: right;
+  font-size: 0;
+}
+
+.social-wrapper a {
+  display: block;
+  float: left;
+  height: 48px;
+  text-indent: -9999px;
+  width: 48px;
+}
+
+.twitter-link {
+  background: url(../../img/twitter-logo.svg) 0 0 no-repeat;
+  margin-right: 16px;
+}
+
+.plus-link {
+  background: url(../../img/google-plus-logo.svg) 0 0 no-repeat;
+}
+
+.section {
+    color: #3F51B5;
+    line-height: 30px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+#back-button {
+  position: absolute;
+    text-align: left; 
+    text-indent: 10px;
+
+}
+
+#back {
+    color: white;
+    text-decoration: none;
+}
+
+.last-updated {
+  color: #757575;
+  font-size: 16px;
+  font-style: italic;
+  margin: 12px auto 60px;
+}
+
+.footer {
+    background: #424242;
+    bottom: 0;
+    color: #999999;
+    font-size: 13px;
+    left: 0;
+    min-height: 60px;
+    padding: 10px 24px;
+    position: relative;
+    right:0;
+    text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.footer a,
+.footer p {
+  line-height: 24px;
+}
+
+/* Search stuff starts here */
+.container {
+  margin: 20px;
+  max-width: 550px;
+}
+h1, .form, .results {
+    padding: 20px 0;
+}
+h1 {
+    margin: 0;
+  padding-bottom: 0;
+}
+.results {
+    padding-top: 0;
+}
+select {
+  background: #f5f5f5;
+  float: left;
+  border: 1px solid #e4e4e4;
+  height: 32px;
+  text-transform: capitalize;
+}
+input[type="text"] {
+  border: 1px solid #DDD;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-right: 1px;
+  padding: 7px;
+  width: 350px;
+}
+input:focus,
+button:focus,
+select:focus {
+  outline:0;
+}
+.results p {
+  margin: 15px 0;
+}
+.message {
+  margin-bottom: 30px;
+}
+.error {
+  color: #EE0000;
+}
+.centered {
+  text-align: center;
+}
+.title {
+  font-size: 16px;
+  color: #1A0DAB;
+}
+.path {
+    font-size: 12px;
+    color: #006621;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.description {
+  font-size: 13px;
+  color: #545454;
+  line-height: 1.3;
+}
+.description strong {
+  color: #545454;
+}
+.path, .description, .page-nav {
+  display: block;
+  padding: 2px 0 0;
+  width: 500px;
+}
+.page-nav {
+  text-align: center;
+  margin-top:20px;
+}
+.page-nav a {
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;  
+}
+.page-nav a.active {
+  color:#000;
+  font-weight:bold;
+}
+.category-label {
+  text-transform:capitalize;
+}
+
+/* Video page stuff starts here */
+.main-content{
+    margin-top: 50px;
+}
+body.videos .card {
+  margin-bottom: 40px;
+  overflow: auto;
+  padding-left: 40px;
+}
+body.videos .card h2 {
+  margin: 40px;
+}
+.video {
+    min-height: 80px;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    padding: 0 30px 15px 30px;
+    background-color: white;
+}
+.video-box {
+  display: block;
+    float: left;
+    margin: 0 40px 40px 0;
+    /* 1st width rule is a fallback for older browsers that don't support calc */
+    width: 29%;
+    width: calc((100% - 120px)/3);
+}
+.video-thumb {
+  background: url(../../img/play-btn.svg) no-repeat 48% 51% #d8d8d8;
+  height: 150px;
+  opacity: .55;
+  width: 100%;
+}
+.video-thumb a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+body.solo-video .card {
+  margin-bottom: 40px;
+}
+.solo-video-description {
+  margin-bottom: 0;
+}
+video {
+  width: 100%;
+}
+#img-con, #title {
+    display: inline-block;
+}
+#img-con {
+    margin-top: 5px;
+    /*width: auto;*/
+}
+
+#title {
+    text-align: center;
+    margin-top: 10px;
+    max-height: 80px;
+}
+
+#title a {
+  color: #212121;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#name{
+    position:relative;
+    top: 0;
+    word-wrap: break-word;
+}
+#subtitle{
+    font-size: .83em;
+    /*word-wrap: break-word;*/
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    color: #263238;
+}
+
+@media only screen and (max-width: 1000px) {
+  .video-box {
+    display: block;
+      float: left;
+      margin: 0 40px 40px 0;
+      /* 1st width rule is a fallback for older browsers that don't support calc */
+      width: 44%;
+      width: calc((100% - 80px)/2);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+    .video-box {
+      /* 1st width rule is a fallback for older browsers that don't support calc */
+      width: 96%;
+        width: calc(100% - 40px);
+    } 
+
+    #title {
+      font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+</style>
+
+
+  <link rel="stylesheet" href="../md.css">
+
+</head><body><div class="head-con">
+<div class="top-bar"></div>
+<div class="contents header-title-contents">
+<div class="contents-inner">
+<p>The contents of this offline web site may change in the future. To access our most recent content, please visit this <a class="online" href="https://cswithandroid.withgoogle.com/content/course" style="color:#0F0" target="_blank">online version.</a></p>
+</div>
+</div>
+<a class="abcde" href="http://https://cswithandroid.withgoogle.com/unit?unit=30" style=" font-weight: bold;display:none" target="_blank">
+</a>
+</div>
+<img src="http://www.google-analytics.com/collect?cn=OfflineDevContent&cm=site&cid=2803174726.2803175226&ea=open&ec=page&tid=UA-XXXXXXX-X&t=pageview&v=1&cs=offlinedevsite&dp=build%2Foutput%2FComputer_Science_with_Android_offline%2FUnit-4%2Fu4-workshop.html"></body></html>
+
+
+
+ <div class="card">
+<div class="card-inner">
+
+	<div class="g3doc-content" id="article">  <h1 id="unit-4">Unit 4</h1>
+
+		<a id="unit_4_workshop"></a>
+		<h2 id="unit-4-workshop">Unit 4 Workshop</h2>
+
+		<p>This workshop's activity will build on the work you did to improve the
+		game of Ghost. The current version of the game, although functional, is not a
+		very exciting one as the computer is fairly easy to beat. Implementing a better
+		computer will require us to use a different data structure to store our
+		dictionary: the trie that you read about in this workshop's preparation.</p>
+
+		<p>Start by updating <code>GhostActivity.onCreate</code> to instantiate a <code>FastDictionary</code>
+		instead of a <code>SimpleDictionary</code> and let's explore <code>FastDictionary</code>. You will
+		notice that it implements the same interface as <code>SimpleDictionary</code> but instead
+		of storing each word in an <code>ArrayList</code>, it adds them to a <code>TrieNode</code>. Your next
+		challenge is to implement the <code>add</code> and <code>isWord</code> methods of the <code>TrieNode</code>
+		class.</p>
+
+		<p>Proceed to re-implement <code>getAnyWordStartingWith</code> in the <code>FastDictionary</code>
+		(we recommend delegating the work to the <code>TrieNode</code> class).</p>
+
+		<p>Test your app to make sure that it works with this new implementation of the
+		dictionary.</p>
+
+		<p>Once <code>getAnyWordStartingWith</code> is working, implement <code>getGoodWordStartingWith</code>.
+		This method should consider all the children of the current prefix and attempt
+		to randomly pick one that is not a complete word. Only if all the children of
+		the current prefix are words should it randomly select one of those. This is
+		not an optimum computer player but should make the game quite a bit more
+		challenging.</p>
+
+		<h3 id="extensions">Extensions</h3>
+
+		<p>There are a few interesting extensions that you may attempt for this activity:</p>
+
+		<ul>
+		<li>Improve the computer player by having it pick a letter that doesn't form a
+		word, but that leads to most words of the desired length (for the computer to
+		win)</li>
+		<li>Teach the computer player to bluff rather than being forced into completing
+		a word. You could do this by selecting a random letter that isn't a word but a
+		better strategy would be to build up a statistical model of what letter usually
+		follows another letter (this is called a Markov model) and use that to pick a
+		likely letter.</li>
+		<li><strong>(Advanced)</strong> Rather than playing against a computer, play against another
+		human player on another device. Take a look at
+		<a target="_blank" href="RealtimeMultiplayerSupport.pdf">Android real-time multiplayer support.</a></li>
+		</ul>
+	 </div>
+
+
+ <div style=" height: 60px;float: left; background-color: #4285f4; border: solid 0px; border-radius: 3px;"><a href="u4-preparation.html"><h4 style="margin: 20px; color: white; line-height: 25px">Previous ( Unit 4: Preparation )</h4></a></div>
+
+ <div style=" height: 60px;float: right; background-color: #4285f4; border: solid 0px; border-radius: 3px;"><a href="../Unit-5/u5-preparation.html"><h4 style="margin: 20px; color: white; line-height: 25px">Next ( Unit 5: Preparation )</h4></a></div>   
+
+ <div style="margin: 0 auto; width: 120px; height: 50px;float: center; background-color: gray; border: solid 0px; border-radius: 3px;"><a href="../START_HERE.html"><h4 style="width: 120px; padding: 0 30px;color: white; line-height: 50px">Home</h4></a></div>
+ 
+   </div>
+   </div>
+   
+<img src="http://www.google-analytics.com/collect?cn=OfflineDevContent&cm=site&cid=2803174726.2803175226&ea=open&ec=page&tid=UA-XXXXXXX-X&t=pageview&v=1&cs=offlinedevsite&dp=build%2Foutput%2FComputer_Science_with_Android_offline%2FUnit-4%2Fu4-workshop.html"></body>
+</html>

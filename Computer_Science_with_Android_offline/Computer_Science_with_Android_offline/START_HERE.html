@@ -1,0 +1,577 @@
+
+<html>
+    <head>
+        <title></title>
+       
+            <style type="text/css">
+     
+
+     html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+    color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 !important;
+}
+
+body.project-home,
+body.videos,
+body.solo-video {
+    background: #f7f7f7;
+}
+
+a {
+    font-size: 18px;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+a.button,
+.card a.button,
+a.button-white {
+    background-color: #03a9f4;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .37);
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 32px;
+    line-height: 18px;
+    margin: 8px 0;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a.button-white {
+    background-color: #fff;
+    color: #03a9f4;
+    position: absolute;
+    right: 20px;
+    top: 4px;
+    z-index: 1;
+}
+
+p {
+    line-height: 32px;
+    margin: 16px 0;
+}
+
+h1 {
+    color: #757575;
+}
+
+h2, .head-con h2 {
+    font-size: 34px;
+    line-height: 40px;
+}
+
+.head-con h2 {
+    color: #fff;
+    font-weight: bold;
+    margin: 28px 0 !important;
+}
+
+.full-site-width {
+    margin: 0 auto;
+    max-width: 1400px;      
+}
+
+.head-con {
+    background: #4285f4;
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.head-con hr {
+    display: none;
+}
+
+.head-con p {
+    font-size: 18px;
+}
+
+.dev-logo {
+    margin-right: 8px;
+    position: relative;
+    top: 11px;
+    width: 51px;
+}
+
+.contents {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contents-inner {
+    padding: 20px 0;
+}
+
+.top-bar {
+    background: #000;
+    min-height: 56px;
+    opacity: .1;
+}
+
+.back-button-wrapper {
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: normal;
+    position: absolute;
+    text-transform: uppercase;
+    top: 10px;
+    z-index: 1;
+}
+
+.back-button {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 12px;
+    top: 6px;
+    vertical-align: top;
+}
+
+.header-title-contents {
+    min-height: 194px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+    margin: 40px auto 0;
+    width: 80%;
+}
+
+.card-inner {
+    overflow: auto;
+    padding: 40px;
+}
+
+.card-inner > h2:first-child,
+.card-inner > h3:first-child {
+    margin-top: 0;
+}
+
+.card ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card li {
+    list-style-type: none;
+    margin: 4px 0;
+}
+
+.card a {
+    color: #03a9f4;
+}
+
+.card a.online {
+    color: green;
+}
+
+.card h2 {
+    color: #757575;
+}
+
+.card h3 {
+    color: #212121;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card h3.red {
+    color: red;
+}
+
+.social-wrapper {
+    float: right;
+    font-size: 0;
+}
+
+.social-wrapper a {
+    display: block;
+    float: left;
+    height: 48px;
+    text-indent: -9999px;
+    width: 48px;
+}
+
+.twitter-link {
+    background: url(../../img/twitter-logo.svg) 0 0 no-repeat;
+    margin-right: 16px;
+}
+
+.plus-link {
+    background: url(../../img/google-plus-logo.svg) 0 0 no-repeat;
+}
+
+.section {
+    color: #3F51B5;
+    line-height: 30px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+#back-button {
+    position: absolute;
+    text-align: left; 
+    text-indent: 10px;
+
+}
+
+#back {
+    color: white;
+    text-decoration: none;
+}
+
+.last-updated {
+    color: #757575;
+    font-size: 16px;
+    font-style: italic;
+    margin: 12px auto 60px;
+}
+
+
+/* Video page stuff starts here */
+.main-content{
+    margin-top: 50px;
+}
+body.videos .card {
+    margin-bottom: 40px;
+    overflow: auto;
+    padding-left: 40px;
+}
+body.videos .card h2 {
+    margin: 40px;
+}
+.video {
+    min-height: 80px;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    padding: 0 30px 15px 30px;
+    background-color: white;
+}
+.video-box {
+    display: block;
+    float: left;
+    margin: 0 40px 40px 0;
+    /* 1st width rule is a fallback for older browsers that don't support calc */
+    width: 29%;
+    width: calc((100% - 120px)/3);
+}
+.video-thumb {
+    background: url(../../img/play-btn.svg) no-repeat 48% 51% #d8d8d8;
+    height: 150px;
+    opacity: .55;
+    width: 100%;
+}
+.video-thumb a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+body.solo-video .card {
+    margin-bottom: 40px;
+}
+.solo-video-description {
+    margin-bottom: 0;
+}
+video {
+    width: 100%;
+}
+#img-con, #title {
+    display: inline-block;
+}
+#img-con {
+    margin-top: 5px;
+    /*width: auto;*/
+}
+
+#title {
+    text-align: center;
+    margin-top: 10px;
+    max-height: 80px;
+}
+
+#title a {
+    color: #212121;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#name{
+    position:relative;
+    top: 0;
+    word-wrap: break-word;
+}
+#subtitle{
+    font-size: .83em;
+    /*word-wrap: break-word;*/
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    color: #263238;
+}
+
+
+.footer {
+background: #424242;
+bottom: 0;
+color: #999999;
+font-size: 13px;
+left: 0;
+min-height: 60px;
+padding: 10px 24px;
+position: relative;
+right:0;
+text-align: center;
+}
+
+.footer a {
+color: #fff;
+font-size: 13px;
+font-weight: bold;
+}
+
+.footer a,
+.footer p {
+line-height: 24px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .video-box {
+        display: block;
+        float: left;
+        margin: 0 40px 40px 0;
+        /* 1st width rule is a fallback for older browsers that don't support calc */
+        width: 44%;
+        width: calc((100% - 80px)/2);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .video-box {
+        /* 1st width rule is a fallback for older browsers that don't support calc */
+        width: 96%;
+        width: calc(100% - 40px);
+    } 
+
+    #title {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+}
+        </style>
+    </head>
+    <body class="project-home">
+        <div class="head-con">
+
+            <div class="top-bar"></div>
+            <div class="contents header-title-contents">
+                <div class="contents-inner">
+
+                    <img class="dev-logo" src="img/android.png">
+                    <h2> Applied Computer Science with Android (Offline Content) </h2>
+                    <p> Welcome to the offline version of Google's Computer science with Android course </p>
+                </div>
+            </div>
+        </div>
+
+     
+
+                      <div class="card">
+            <div class="card-inner">
+                <h3>Welcome again to Applied CS with Android</h3>
+                <p>Welcome! This is an offline version of the Applied CS with Android course, in case of connectivity issues. If you have a reliable connection to the Internet, we strongly suggest using the <a href="https://cswithandroid.withgoogle.com/content/course" target="_blank" class="online">online version</a> to make sure you have access to all the links and the most up to date resources.</p>
+
+               
+
+<p>All the class resources have been made available offline in this version, as well as certain Google documentation. However, where we can't provide an offline copy, the external link remains.</p>
+<p>You will also find the binaries for Android Studio in this package, as well as installation instructions to enable you to get started quickly.</p>
+<p>Good luck!</p>
+<p>-- The Applied CS with Android Team</p>
+
+
+
+ <div style=" height: 60px;float: right; background-color: #4285f4; border: solid 0px; border-radius: 3px;"><a href="Unit-0/u0-preparation.html"><h4 style="margin: 20px; color: white; line-height: 25px">START COURSE</h4></a></div>
+</div>
+
+
+            </div>
+
+      <div class="card">
+            <div class="card-inner">
+                <h3 class="red">Please Note</h3>
+                <p><span class="bold">Links that point to online resources are <span style="color:green">green</span> in color and will open in a new window.</span> </p>
+
+</div>
+
+              
+            </div>
+
+
+            <!--
+                 I                I
+                  I      ++      I
+                   IIIIIIIIIIIIII
+                 IIIIIIIIIIIIIIIIII
+               IIIIIIIIIIIIIIIIIIIIII
+              IIII   IIIIIIIIII  IIIII  
+             IIIIIIIIIIIIIIIIIIIIIIIIII
+            IIIIIIIIIIIIIIIIIIIIIIIIIIII
+            IIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+      IIII  IIIIIIIIIIIIIIIIIIIIIIIIIIII  IIII
+     IIIIII IIIIIIIIIIIIIIIIIIIIIIIIIIII IIIIII
+
+If debugging is the process of removing bugs, then programming must be the process of putting them in. (Djikstra)
+-->
+
+
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                           
+               
+               
+                <div class="section">
+                    <h3 class="section-title">Unit 0: App Inventor (optional)</h3>
+                    <div id="section-content">
+                        <ul>
+                                    <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-0/u0-preparation.html" target="_self">Preparation for Unit 0-App Inventor</a></li>
+                            
+                        <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-0/u0-workshop.html" target="_self">Workshop for Unit 0-App Inventor</a></li>
+                            
+                        
+                        </ul>
+                    </div> 
+                </div>
+            
+                 <div class="section">
+                    <h3 class="section-title">Unit 1: Getting started</h3>
+                    <div id="section-content">
+                        <ul>
+                                    <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-1/u1-preparation.html" target="_self">Preparation for Unit 1-Getting started</a></li>
+                            
+                        <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-1/u1-workshop.html" target="_self">Workshop for Unit 1-Getting started</a></li>
+                            
+                        
+                        </ul>
+                    </div> 
+                </div>
+            
+               
+                <div class="section">
+                    <h3 class="section-title">Unit 2: Starting from scratch</h3>
+                    <div id="section-content">
+                        <ul>
+                                    <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-2/u2-preparation.html" target="_self">Preparation for Unit 2-Starting from scratch</a></li>
+                            
+                        <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-2/u2-workshop.html" target="_self">Workshop for Unit 2-Starting from scratch</a></li>
+                            
+                        
+                        </ul>
+                    </div> 
+                </div>
+            
+                          
+               
+
+                <div class="section">
+                    <h3 class="section-title">Unit 3: Binary Search and Application State</h3>
+                    <div id="section-content">
+                        <ul>
+                                    <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-3/u3-preparation.html" target="_self">Preparation for Unit 3-Binary Search and Application State</a></li>
+                            
+                        <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-3/u3-workshop.html" target="_self">Workshop for Unit 3-Binary Search and Application State</a></li>
+                            
+                        
+                        </ul>
+                    </div> 
+                </div>
+
+                
+
+                <div class="section">
+                    <h3 class="section-title">Unit 4: Trees</h3>
+                    <div id="section-content">
+                        <ul>
+                                    <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-4/u4-preparation.html" target="_self">Preparation for Unit 4-Trees</a></li>
+                            
+                        <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-4/u4-workshop.html" target="_self">Workshop for Unit 4-Trees</a></li>
+                            
+                        
+                        </ul>
+                    </div> 
+                </div>
+            
+               
+                 
+                <div class="section">
+                    <h3 class="section-title">Unit 5: Priority Queue</h3>
+                    <div id="section-content">
+                        <ul>
+                                    <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-5/u5-preparation.html" target="_self">Preparation for Unit 5-Priority Queue</a></li>
+                            
+                        <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Unit-5/u5-workshop.html" target="_self">Workshop for Unit 5-Priority Queue</a></li>
+                            
+                        
+                        </ul>
+                    </div> 
+                </div>
+
+
+                            
+               
+                   <div class="section">
+                    <h3 class="section-title">Android Studio Installation Guide</h3>
+                    <div id="section-content">
+                        <ul>
+                                    <li class="section-content"> <a target="_blank" href="../Computer_Science_with_Android_offline/Binaries/AndroidStudio.pdf" target="_self">Android Studio: How to install (pdf)</a></li>
+                            
+                        <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Binaries/android-studio-bundle-141.2456560-windows.exe" target="_self">Android Studio IDE for Windows</a></li>
+                            
+                        <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Binaries/android-studio-ide-141.2456560-linux.zip" target="_self">Android Studio Download IDE for Linux</a></li>
+                            
+                        <li class="section-content"> <a href="../Computer_Science_with_Android_offline/Binaries/android-studio-ide-141.2456560-mac.dmg" target="_self">Android Studio Download IDE for Mac OSX</a></li>
+                            
+                        
+                        </ul>
+                    </div> 
+                </div>
+                           
+            </div>
+        </div>
+
+         
+        <p class="last-updated contents">Created at: 01/03/2016 08:57:16 </p>
+
+        <h4>
+            
+        </h4><img style="width:1px; height:1px" src="http://www.google-analytics.com/collect?cn=OfflineDevContent&cm=site&cid=2111303265.2111303592&ea=open&ec=page&tid=UA-XXXXXXX-X&t=pageview&v=1&cs=offlinedevsite&dp=homepage.html">
+        
+          
+          
+        <div class="footer"><p >Except where otherwise noted, this content in this disk and all accompanying disks are licensed under the <a href="#" target="_blank">INCLUDE LICENSE PATH</a>, and code samples (if any) are licensed under the <a href="#" target="_blank">INCLUDE LICENSE PATH</a>.</p></div>
+
+       
+    </body>
+</html>

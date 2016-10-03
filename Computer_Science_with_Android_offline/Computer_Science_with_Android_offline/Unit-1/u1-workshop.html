@@ -1,0 +1,659 @@
+<html><head><title>Unit 1</title></head><body><html><head><style type="text/css">
+
+  
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: #212121;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+    margin: 0;
+    padding: 0 !important;
+}
+
+body.project-home,
+body.videos,
+body.solo-video {
+  background: #f7f7f7;
+}
+
+a {
+  font-size: 18px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+a.button,
+.card a.button,
+a.button-white {
+  background-color: #03a9f4;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .37);
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  height: 32px;
+  line-height: 18px;
+  margin: 8px 0;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a.button-white {
+  background-color: #fff;
+  color: #03a9f4;
+  position: absolute;
+  right: 20px;
+  top: 4px;
+  z-index: 1;
+}
+
+p {
+  line-height: 32px;
+  margin: 16px 0;
+}
+
+h1 {
+  color: #757575;
+}
+
+h2, .head-con h2 {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.head-con h2 {
+  color: #fff;
+  font-weight: bold;
+  margin: 28px 0 !important;
+}
+
+.full-site-width {
+  margin: 0 auto;
+  max-width: 1400px;    
+}
+
+.head-con {
+    background: #4285f4;
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.head-con hr {
+  display: none;
+}
+
+.head-con p {
+  font-size: 18px;
+}
+
+.dev-logo {
+  margin-right: 8px;
+  position: relative;
+  top: 11px;
+  width: 51px;
+}
+
+.contents {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contents-inner {
+  padding: 20px 0;
+}
+
+.top-bar {
+  background: #000;
+  min-height: 32px;
+  opacity: .1;
+}
+
+.back-button-wrapper {
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: normal;
+  position: absolute;
+  text-transform: uppercase;
+  top: 10px;
+  z-index: 1;
+}
+
+.back-button {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 12px;
+  top: 6px;
+  vertical-align: top;
+}
+
+.header-title-contents {
+  min-height: 48px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+  margin: 40px auto 0;
+  width: 80%;
+}
+
+.card-inner {
+  overflow: auto;
+  padding: 40px;
+}
+
+.card-inner > h2:first-child,
+.card-inner > h3:first-child {
+  margin-top: 0;
+}
+
+
+
+.card a {
+  color: #03a9f4;
+}
+
+.card a.online {
+  color: #00FF2F;
+}
+
+.card h2 {
+  color: #757575;
+}
+
+.card h3 {
+  color: #212121;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card h3.red {
+  color: red;
+}
+
+.social-wrapper {
+  float: right;
+  font-size: 0;
+}
+
+.social-wrapper a {
+  display: block;
+  float: left;
+  height: 48px;
+  text-indent: -9999px;
+  width: 48px;
+}
+
+.twitter-link {
+  background: url(../../img/twitter-logo.svg) 0 0 no-repeat;
+  margin-right: 16px;
+}
+
+.plus-link {
+  background: url(../../img/google-plus-logo.svg) 0 0 no-repeat;
+}
+
+.section {
+    color: #3F51B5;
+    line-height: 30px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+#back-button {
+  position: absolute;
+    text-align: left; 
+    text-indent: 10px;
+
+}
+
+#back {
+    color: white;
+    text-decoration: none;
+}
+
+.last-updated {
+  color: #757575;
+  font-size: 16px;
+  font-style: italic;
+  margin: 12px auto 60px;
+}
+
+.footer {
+    background: #424242;
+    bottom: 0;
+    color: #999999;
+    font-size: 13px;
+    left: 0;
+    min-height: 60px;
+    padding: 10px 24px;
+    position: relative;
+    right:0;
+    text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.footer a,
+.footer p {
+  line-height: 24px;
+}
+
+/* Search stuff starts here */
+.container {
+  margin: 20px;
+  max-width: 550px;
+}
+h1, .form, .results {
+    padding: 20px 0;
+}
+h1 {
+    margin: 0;
+  padding-bottom: 0;
+}
+.results {
+    padding-top: 0;
+}
+select {
+  background: #f5f5f5;
+  float: left;
+  border: 1px solid #e4e4e4;
+  height: 32px;
+  text-transform: capitalize;
+}
+input[type="text"] {
+  border: 1px solid #DDD;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-right: 1px;
+  padding: 7px;
+  width: 350px;
+}
+input:focus,
+button:focus,
+select:focus {
+  outline:0;
+}
+.results p {
+  margin: 15px 0;
+}
+.message {
+  margin-bottom: 30px;
+}
+.error {
+  color: #EE0000;
+}
+.centered {
+  text-align: center;
+}
+.title {
+  font-size: 16px;
+  color: #1A0DAB;
+}
+.path {
+    font-size: 12px;
+    color: #006621;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.description {
+  font-size: 13px;
+  color: #545454;
+  line-height: 1.3;
+}
+.description strong {
+  color: #545454;
+}
+.path, .description, .page-nav {
+  display: block;
+  padding: 2px 0 0;
+  width: 500px;
+}
+.page-nav {
+  text-align: center;
+  margin-top:20px;
+}
+.page-nav a {
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;  
+}
+.page-nav a.active {
+  color:#000;
+  font-weight:bold;
+}
+.category-label {
+  text-transform:capitalize;
+}
+
+/* Video page stuff starts here */
+.main-content{
+    margin-top: 50px;
+}
+body.videos .card {
+  margin-bottom: 40px;
+  overflow: auto;
+  padding-left: 40px;
+}
+body.videos .card h2 {
+  margin: 40px;
+}
+.video {
+    min-height: 80px;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    padding: 0 30px 15px 30px;
+    background-color: white;
+}
+.video-box {
+  display: block;
+    float: left;
+    margin: 0 40px 40px 0;
+    /* 1st width rule is a fallback for older browsers that don't support calc */
+    width: 29%;
+    width: calc((100% - 120px)/3);
+}
+.video-thumb {
+  background: url(../../img/play-btn.svg) no-repeat 48% 51% #d8d8d8;
+  height: 150px;
+  opacity: .55;
+  width: 100%;
+}
+.video-thumb a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+body.solo-video .card {
+  margin-bottom: 40px;
+}
+.solo-video-description {
+  margin-bottom: 0;
+}
+video {
+  width: 100%;
+}
+#img-con, #title {
+    display: inline-block;
+}
+#img-con {
+    margin-top: 5px;
+    /*width: auto;*/
+}
+
+#title {
+    text-align: center;
+    margin-top: 10px;
+    max-height: 80px;
+}
+
+#title a {
+  color: #212121;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#name{
+    position:relative;
+    top: 0;
+    word-wrap: break-word;
+}
+#subtitle{
+    font-size: .83em;
+    /*word-wrap: break-word;*/
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    color: #263238;
+}
+
+@media only screen and (max-width: 1000px) {
+  .video-box {
+    display: block;
+      float: left;
+      margin: 0 40px 40px 0;
+      /* 1st width rule is a fallback for older browsers that don't support calc */
+      width: 44%;
+      width: calc((100% - 80px)/2);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+    .video-box {
+      /* 1st width rule is a fallback for older browsers that don't support calc */
+      width: 96%;
+        width: calc(100% - 40px);
+    } 
+
+    #title {
+      font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+</style>
+
+
+  <link rel="stylesheet" href="../md.css">
+  
+</head><body><div class="head-con">
+<div class="top-bar"></div>
+<div class="contents header-title-contents">
+<div class="contents-inner">
+<p>The contents of this offline web site may change in the future. To access our most recent content, please visit this <a class="online" href="https://cswithandroid.withgoogle.com/content/course" style="color:#0F0" target="_blank">online version.</a></p>
+</div>
+</div>
+<a class="abcde" href="http://https://cswithandroid.withgoogle.com/unit?unit=27" style=" font-weight: bold;display:none" target="_blank">
+</a>
+</div>
+<img src="http://www.google-analytics.com/collect?cn=OfflineDevContent&cm=site&cid=2803001186.2803001576&ea=open&ec=page&tid=UA-XXXXXXX-X&t=pageview&v=1&cs=offlinedevsite&dp=build%2Foutput%2FComputer_Science_with_Android_offline%2FUnit-1%2Fu1-workshop.html"></body></html>
+
+<link rel="stylesheet" type="text/css" href="../md.css">	
+
+
+
+                      <div class="card">
+            <div class="card-inner">
+
+
+<div class="g3doc-content" id="article">  
+
+<a id="unit_1_workshop"></a>
+<h2 id="unit-1-workshop">Unit 1 Workshop</h2>
+
+<p>For this workshop, you will be creating an Android app for a simple anagram
+game.</p>
+
+<p>An anagram is a word formed by rearranging the letters of another word.
+For example, <em>cinema</em> is an anagram of <em>iceman</em>.</p>
+
+<p>The mechanics of the game are as follows:</p>
+
+<ul>
+<li>The game provides the user with a word from the dictionary.</li>
+<li>The user tries to create as many words as possible that contain all the
+letters of the given word plus one additional letter. Note that adding the
+extra letter at the beginning or the end without reordering the other letters
+is not valid. For example, if the game picks the word 'ore' as a starter, the
+user might guess 'rose' or 'zero' but not 'sore'.</li>
+<li>The user can give up and see the words that they did not guess.</li>
+</ul>
+
+<p>In order to ensure that the game is not too difficult, the computer will only
+propose words that have at least 5 possible valid anagrams.</p>
+
+<p><center>
+<img src="anagrams.png" alt="screen shot"/>
+</center></p>
+
+<p>We have provided you with some
+<a href="anagrams_starter.zip" rel="noreferrer">starter code</a>
+that contains a 10,000-word dictionary and handles the UI portions of this game
+and you will be responsible for writing the <code>AnagramDictionary</code> class that
+handles all word manipulations.</p>
+
+<p>Your first task will be to complete the implementation of the
+<code>AnagramDictionary</code>'s constructor. Each word that is read from the dictionary
+file should be stored in three different data structures:</p>
+
+<ul>
+<li>A <code>HashSet</code> (called <code>wordSet</code>) that will allow us to rapidly (in O(1)) verify
+whether a word is valid.</li>
+<li>An <code>ArrayList</code> (called <code>wordList</code>) that allows us to randomly select a word.</li>
+<li>A <code>HashMap</code> (called <code>lettersToWord</code>) that will allow us to group anagrams
+together. We will do this by using a key that is a copy of the strings with
+their letter sorted in alphabetical order. For example, we may have an entry of
+the form: key: &quot;opst&quot; value: [&quot;post&quot;, &quot;spot&quot;, &quot;pots&quot;, &quot;tops&quot;, ...].</li>
+</ul>
+
+<p>The words can be added to <code>wordSet</code> and <code>wordList</code> using the standard methods
+of those classes.</p>
+
+<p>You will need to create a helper function that takes a <code>String</code> and returns
+another <code>String</code> with the same letters in alphabetical order
+(e.g. &quot;post&quot; -&gt; &quot;opst&quot;).</p>
+
+<p>Once this is done, you can check whether <code>lettersToWord</code> already contains an
+entry for that key. If it does not, we can add a new <code>ArrayList</code> as the
+corresponding value for that key. The word can then be added to this
+<code>ArrayList</code>.</p>
+
+<h3 id="isgoodword"><u><code>isGoodWord</code></u></h3>
+
+<p>Your next task is to implement <code>isGoodWord</code> which checks:</p>
+
+<ul>
+<li>the provided word is a valid dictionary word (i.e., in <code>wordSet</code>), and</li>
+<li>the word does not contain the base word as a substring.</li>
+</ul>
+
+<p>For example, with the base word 'post':</p>
+
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>isGoodWord(&quot;nonstop&quot;)</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>isGoodWord(&quot;poster&quot;)</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>isGoodWord(&quot;lamp post&quot;)</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>isGoodWord(&quot;spots&quot;)</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>isGoodWord(&quot;apostrophe&quot;)</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>Checking a word is a valid dictionary word can be accomplished by looking at
+<code>wordSet</code> to see if it contains the word. Checking that the word does not
+contain the base word as a substring is left as a challenge!</p>
+
+<h3 id="getanagramswithonemoreletter"><code>getAnagramsWithOneMoreLetter</code></h3>
+
+<p>Finally, implement <code>getAnagramsWithOneMoreLetter</code> which takes a string and finds
+all anagrams that can be formed by adding one letter to that word.</p>
+
+<p>Be sure to instantiate a new <code>ArrayList</code> as your return value then check the
+given word + each letter of the alphabet one by one against the entries in
+<code>lettersToWord</code>.</p>
+
+<p>At this point, you should have a working app so try running your app on your
+device and verify that it works although the game will be a bit boring since it
+will always use the same starter word.</p>
+
+<a id="getanagramswithonemoreletter_2"></a>
+<h3 id="getanagramswithonemoreletter-2"><code>getAnagramsWithOneMoreLetter</code></h3>
+
+<p>If your game is working, proceed to implement <code>pickGoodStarterWord</code> to make the
+game more interesting. Pick a random starting point in the wordList array and
+check each word in the array until you find one that had at least
+<code>MIN_NUM_ANAGRAMS</code> anagrams. Be sure to handle wrapping around to the start of
+the array if needed. Run your app again to make sure it's working.</p>
+
+<h3 id="refactoring">Refactoring</h3>
+
+<p>At this point, the game is functional but can be quite hard to play if you
+start off with a long base word. To avoid this, let's refactor
+<code>AnagramDictionary</code> to give words of increasing length.</p>
+
+<p>This refactor starts in the constructor where, in addition to populating
+<code>wordList</code>, you should also store each word in a <code>HashMap</code> (let's call it
+<code>sizeToWords</code>) that maps word length to an <code>ArrayList</code> of all words of that
+length. This means, for example, you should be able to get all four-letter words
+in the dictionary by calling <code>sizeToWords.get(4)</code>.</p>
+
+<p>You should also create a new member variable called <code>wordLength</code> and default it
+to <code>DEFAULT_WORD_LENGTH</code>. Then in <code>pickGoodStarterWord</code>, restrict your search to
+the words of length <code>wordLength</code>, and once you're done, increment <code>wordLength</code>
+(unless it's already at <code>MAX_WORD_LENGTH</code>) so that the next invocation will
+return a larger word.</p>
+
+<h3 id="extensions">Extensions</h3>
+
+<p>This activity (like all future activities) contains some optional extensions. If
+time permits, we would like each group to attempt at least one extension, either
+from the list below or one that you have invented yourselves.</p>
+
+<ul>
+<li>Two-letter mode: switch to allowing the user to add two letters to form
+anagrams</li>
+<li>Optimize word selection by removing words that do not have enough anagrams
+from the pool of possible starter words. Note that those words should still
+remain in <code>wordSet</code> since they can still be used as anagrams to other words.</li>
+<li>Two-word mode: Allow the user to add one letter to a pair of words to form two
+new valid words.</li>
+</ul>
+ </div>
+
+  <div style=" height: 60px;float: left; background-color: #4285f4; border: solid 0px; border-radius: 3px;"><a href="u1-preparation.html"><h4 style="margin: 20px; color: white; line-height: 25px">Previous ( Unit 1: Preparation )</h4></a></div>
+
+ <div style=" height: 60px;float: right; background-color: #4285f4; border: solid 0px; border-radius: 3px;"><a href="../Unit-2/u2-preparation.html"><h4 style="margin: 20px; color: white; line-height: 25px">Next ( Unit 2: Preparation )</h4></a></div>
+
+
+ <div style="margin: 0 auto; width: 120px; height: 50px;float: center; background-color: gray; border: solid 0px; border-radius: 3px;"><a href="../START_HERE.html"><h4 style="width: 120px; padding: 0 30px;color: white; line-height: 50px">Home</h4></a></div>
+
+ 
+</div>
+</div>
+
+ <img src="http://www.google-analytics.com/collect?cn=OfflineDevContent&cm=site&cid=2803001186.2803001576&ea=open&ec=page&tid=UA-XXXXXXX-X&t=pageview&v=1&cs=offlinedevsite&dp=build%2Foutput%2FComputer_Science_with_Android_offline%2FUnit-1%2Fu1-workshop.html"></body></html>
