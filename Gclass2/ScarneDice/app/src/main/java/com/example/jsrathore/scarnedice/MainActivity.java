@@ -38,13 +38,8 @@ public class MainActivity extends AppCompatActivity {
         diceimage=(ImageView)findViewById(R.id.imageView);
         usertv =(TextView)findViewById(R.id.yourscore);
         computertv=(TextView)findViewById(R.id.computerscore);
+        diceimage.setImageResource(R.drawable.dice5);
 
-           //Toast.makeText(this,"hello ="+x,Toast.LENGTH_LONG).show();
-
-
-
-        //userturn="user"; computerturn="computer";
-        //str=userturn;//Dominate user for first turn
 
 
         rollbutton.setOnClickListener(new View.OnClickListener() {  //roll button
@@ -61,23 +56,12 @@ public class MainActivity extends AppCompatActivity {
                   else {
                       if (x == 1) {
                           diceimage.setImageResource(R.drawable.dice1);
-                          // if (str.equals(userturn)){
                           UserTurnScore = 0;
                           str = computerturn;
                           rollbutton.setEnabled(false);
                           holdbutton.setEnabled(false);
                           computerplay();
-                          // }
-                  /*else{
-                      rollbutton.setEnabled(true);
-                      holdbutton.setEnabled(true);
-                      ComputerTurnScore=0;
-                      str=userturn;
-
-                    }*/
                       }
-
-                      //if(str.equals(userturn)){
                       if (x == 2) {
                           diceimage.setImageResource(R.drawable.dice2);
                           UserTurnScore += 2;
@@ -99,27 +83,6 @@ public class MainActivity extends AppCompatActivity {
                           UserTurnScore += 6;
                       }
                   }
-                // }
-             /* else
-                    {
-                        if (x==2){
-                            diceimage.setImageResource(R.drawable.dice2);
-                            ComputerTurnScore+=2;}
-                        if (x==3){
-                            diceimage.setImageResource(R.drawable.dice3);
-                            ComputerTurnScore+=3;}
-                        if (x==4){
-                            diceimage.setImageResource(R.drawable.dice4);
-                            ComputerTurnScore+=4;}
-                        if (x==5){
-                            diceimage.setImageResource(R.drawable.dice5);
-                            ComputerTurnScore+=5;}
-                        if (x==6){
-                            diceimage.setImageResource(R.drawable.dice6);
-                            ComputerTurnScore+=6;}
-
-                   }*/
-
                }
         });
 
@@ -129,9 +92,6 @@ public class MainActivity extends AppCompatActivity {
         holdbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-               // if(str.equals(userturn)){\
-
 
 
                     UserOverAll += UserTurnScore;
@@ -153,21 +113,7 @@ public class MainActivity extends AppCompatActivity {
                     holdbutton.setEnabled(false);
                     computerplay();
                 }
-               // }
-                /*else{
-                    rollbutton.setEnabled(true);
-                    holdbutton.setEnabled(true);
-                    ComputerOverAll+=ComputerTurnScore;
-                    str=userturn;
-                    x=1;
-                    String computerScore="ComputerScore:"+ComputerOverAll;
-                    computertv.setText(computerScore);
-                    ComputerTurnScore=0;
-
-                }
-*/
-
-            }
+                          }
         });
 
 
@@ -188,25 +134,17 @@ public class MainActivity extends AppCompatActivity {
                 holdbutton.setEnabled(true);
             }
         });
-
-
-
     }
+
     public void computerplay(){
-        //Toast.makeText(MainActivity.this, "Userturn="+UserTurnScore, Toast.LENGTH_SHORT).show();
-
-
-        /*new Handler().postDelayed(new Runnable() {
+               /*new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
             }
         },1000);*/
-
-
-
-        x=random.nextInt(6)+1;
-          while(x!=1 && ComputerTurnScore<20){
+           x=random.nextInt(6)+1;
+           while(x!=1 && ComputerTurnScore<20){
               x=random.nextInt(6)+1;
 
               if(ComputerTurnScore>=100){
